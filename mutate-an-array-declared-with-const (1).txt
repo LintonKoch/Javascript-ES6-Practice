@@ -1,0 +1,19 @@
+const s = [5, 7, 2];
+function editInPlace() {
+  // Only change code below this line
+
+  for(let i =0; i<s.length;i++)
+  {
+    if((i+1)%2 != 0) 
+      s[i] = factorial(i+1)+1;
+    else
+      s[i] = factorial(i+1)+3;
+  }
+
+  function factorial(n)
+  {
+     return n ? n * factorial(n - 1) : 1;
+  }
+  // Only change code above this line
+}
+editInPlace();
